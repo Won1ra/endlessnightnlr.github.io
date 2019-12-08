@@ -15,7 +15,7 @@ let canvas = document.getElementById('canvas'),
 
 	mouseDown = false,
 
-	speed = 100,
+	speed = 25,
 	pixels = [],
 	layers = new Array(width);
 
@@ -95,7 +95,7 @@ document.getElementById('clear').onclick = () => {
 //>------------------------------------------------
 
 //FUNCTIONS
-function addPxls(x,y,count=500,range=500){
+function addPxls(x,y,count=500,range=100){
 	main : for(let i=0;i<count;i++){
 		let last = pixels.length;
 		pixels.push({
